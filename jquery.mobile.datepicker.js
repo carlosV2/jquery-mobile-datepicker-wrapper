@@ -39,6 +39,7 @@
                 $(object.settings.altField)
                   .date( "addMobileStyle" );
               }
+              object.input.trigger("change");
             },0);
           }, // Define a callback function when a date is selected
 		onChangeMonthYear: function(month,year,object){
