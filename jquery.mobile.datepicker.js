@@ -76,6 +76,8 @@
       _create:function(){
         var calendar, interval,
           that = this;
+
+        this.options.dateFormat = this.element.data('format');
         if( this.options.inline ){
 	        this.options.altField = this.element;
           calendar = $("<div>").datepicker(this.options);
